@@ -150,7 +150,7 @@ class Projects extends Component {
                 {this.renderHobbyProjects(projects)}
                 <a
                   href={
-                    'https://github.com/snaerth/create-react-component-folder/'
+                    'http://www.gregoryakerman.com/GA-Resume-V-Main.pdf'
                   }
                   title={text}
                   key="project-image-5"
@@ -161,11 +161,11 @@ class Projects extends Component {
                   <div className="even">
                     <ImageBlurWrapper
                       id={5}
-                      src="images/crcf.png"
-                      alt="Create react component folder"
-                      text="Hjálpartól til að búa til möppu strúktur fyrir React eða React Native með einni skipun"
+                     
+                      alt="Gregory Akerman's Resume"
+                      text="Download Resume"
                       overlay={true}
-                      overlayTitle="Create react component folder (2018)"
+                      overlayTitle="Download Resume"
                       visible={visible}
                     />
                   </div>

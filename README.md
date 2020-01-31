@@ -1,8 +1,6 @@
 ## About
 This project is a portfolio/resume demo website about my self. I created the website with React.js, Redux and animations with GSAP. Enjoy!
 
-## Demo
-You can find demo here [DEMO](http://www.snaerseljan.com)
 
 ## Create-react-app
 

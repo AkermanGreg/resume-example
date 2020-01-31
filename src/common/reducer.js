@@ -1,4 +1,4 @@
-import is from '../data/is.json';
+import en from '../data/en.json';
 import {
   REVEAL_ANIMATION_FORWARD,
   REVEAL_ANIMATION_BACKWARD,
@@ -10,8 +10,7 @@ import {
 const initialState = {
   pageRevealer: false,
   pageRevealerType: 'top',
-  translations: is,
-  lang: 'is'
+  lang: 'en'
 };
 
 export default function(state = initialState, action) {

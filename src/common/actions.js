@@ -1,4 +1,3 @@
-import is from '../data/is.json';
 import en from '../data/en.json';
 import {
   REVEAL_ANIMATION_FORWARD,
@@ -8,19 +7,21 @@ import {
   REMOVE_PAGE_LOADING,
 } from './types';
 
+
+export function revealAnimationForward() {
+  return { type: REVEAL_ANIMATION_FORWARD };
+}
+
 export function setLanguage(lang) {
   return {
     type: SET_LANGUAGE,
     payload: {
-      translations: lang === 'is' ? is : en,
+      translations: lang === 'en' ? en : en,
       lang: lang || 'en',
     },
   };
 }
 
-export function revealAnimationForward() {
-  return { type: REVEAL_ANIMATION_FORWARD };
-}
 
 export function revealAnimationBackward(backButtonPressed) {
   return { type: REVEAL_ANIMATION_BACKWARD, payload: backButtonPressed };

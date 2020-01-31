@@ -31,12 +31,12 @@ class Right extends Component {
       <div className="content-container">
         <div className="job-application--button-container">
           <Link to="/profile" onClick={e => this.clickHandler(e, 'profile')}>
-            <Button text={translations.resume} />
+            <Button text='Resume' />
           </Link>
           <Link to="/profile" onClick={e => this.clickHandler(e, 'contact')}>
             <Button
               className="hidden-mobile-480"
-              text={translations.sendEmail}
+              text='Contact'
             />
           </Link>
         </div>

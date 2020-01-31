@@ -220,7 +220,7 @@ class Processbar extends Component {
                 <rect height={this.props.height} fill="#CCCCCC" width="100%" />
                 <rect
                   height={this.props.height}
-                  fill="#FF92F6"
+                  fill="#00008B"
                   width="0"
                   ref={'processbar-' + i}
                 />

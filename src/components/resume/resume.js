@@ -72,7 +72,7 @@ class Resume extends Component {
       }
 
       if (isVisible && !el.isAnimated && !allSectionsAnimated) {
-        const { imagesVisible, processbarVisible } = this.state;
+        const {  processbarVisible } = this.state;
 
         if (el.classList.contains('processbars')) {
           this.changeStateVisibility(
@@ -86,17 +86,7 @@ class Resume extends Component {
           cnt++;
         }
 
-        if (el.classList.contains('images-container')) {
-          this.changeStateVisibility(
-            el,
-            imagesVisible,
-            'imagesVisible',
-            'images-container'
-          );
 
-          el.isAnimated = true;
-          cnt++;
-        }
 
         if (el.classList.contains('projects-wrapper')) {
           this.setState((prevState, props) => {
@@ -111,7 +101,7 @@ class Resume extends Component {
           const id = el.attributes['data-navid'].value;
           const row = self.refs['rows' + id];
           if (row) {
-            self.animateSections(row.children, 3);
+            self.animateSections(row.children, 2);
             el.isAnimated = true;
           }
         }
@@ -213,7 +203,7 @@ class Resume extends Component {
   renderSection(section, index, last) {
     const { more } = this.props.translations;
     const rows = section.rows ? this.renderRows(section.rows, index) : null;
-    const colImages = this.renderColImages(section.images, index);
+   
 
     return (
       <div
@@ -254,44 +244,13 @@ class Resume extends Component {
               </div>
             </div>
           ) : null}
-          {colImages ? colImages : null}
+       
         </div>
         <WaveSvg />
       </div>
     );
   }
 
-  renderColImages(images, index) {
-    const { imagesVisible } = this.state;
-    let left = [];
-    let right = [];
-
-    for (let i = 0, len = images.length; i < len; i++) {
-      if (i % 2 === 0) {
-        left.push(images[i]);
-      } else {
-        right.push(images[i]);
-      }
-    }
-
-    return (
-      <div
-        className={classnames(
-          'onscroll-reveal',
-          'images-container',
-          'images-container' + index
-        )}
-        ref={'images-container' + index}
-      >
-        <Evenodd
-          left={left}
-          right={right}
-          type={index % 2 !== 0 ? 'odd' : 'even'}
-          visible={imagesVisible[index]}
-        />
-      </div>
-    );
-  }
 
   renderRows(rows, index) {
     return rows.map((row, i) => {
@@ -306,6 +265,10 @@ class Resume extends Component {
           </div>
           <div className="resume-right">
             <p>{row.content}</p>
+            <ul>
+              <li className="listOne">{row.listOne}</li>
+              <li className="listTwo">{row.listTwo}</li>
+            </ul>
           </div>
         </div>
       );
@@ -342,20 +305,7 @@ class Resume extends Component {
     this.animateSections(newRows);
   }
 
-  renderProcessbarsList(processbars, processbarVisible, index) {
-    return (
-      <div className="resume-section onscroll-reveal" data-navid={index}>
-        <div>
-          <ProcessBarsList
-            processbars={processbars}
-            visibleArr={processbarVisible}
-            title={processbars[0].mainTitle}
-          />
-        </div>
-        <WaveSvg />
-      </div>
-    );
-  }
+
 
   renderProjects(projects, index) {
     const { projectsVisible } = this.state;
@@ -370,14 +320,31 @@ class Resume extends Component {
       </div>
     );
   }
+    renderProcessbarsList(processbars, processbarVisible, index) {
+    return (
+      <div className="resume-section onscroll-reveal" data-navid={index}>
+        <div>
+          <ProcessBarsList
+            processbars={processbars}
+            visibleArr={processbarVisible}
+            title={processbars[0].mainTitle}
+          />
+        </div>
+        <WaveSvg />
+      </div>
+    );
+  }
+
+
 
   render() {
     const { translations } = this.props;
     const {
       processbars,
       career,
-      education,
       projects,
+      education,
+      
       about,
       nav
     } = translations;
@@ -401,8 +368,9 @@ class Resume extends Component {
         <Nav links={nav} linksState={linksState} />
         <div className="resume-container" ref="container">
           {this.renderSection(about, 0)}
-          {this.renderSection(education, 1)}
-          {this.renderSection(career, 2)}
+           {this.renderSection(career, 1)}
+          {this.renderSection(education, 2)}
+         
           {this.renderProcessbarsList(processbars, processbarVisible, 3)}
           {this.renderProjects(projects, 4)}
         </div>

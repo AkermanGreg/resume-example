@@ -15,7 +15,7 @@ class ImageBlurWrapper extends Component {
     src: PropTypes.string.isRequired,
     alt: PropTypes.string.isRequired,
     txt: PropTypes.string,
-    thumbnail: PropTypes.string.isRequired,
+    thumbnail: PropTypes.string,
     visible: PropTypes.bool,
     blur: PropTypes.string,
     id: PropTypes.number.isRequired,
@@ -61,6 +61,9 @@ class ImageBlurWrapper extends Component {
     } = this.props;
 
     if (visible === true) {
+      this.loadBigImage(src);
+    }
+    if (visible === false) {
       this.loadBigImage(src);
     }
 

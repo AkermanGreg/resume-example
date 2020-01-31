@@ -70,12 +70,12 @@
     margin: 0;
     padding: 1.2em 2em;
     background-color: transparent;
-    color: #37474f;
+    color: #ffffff;
     font-size: 14px;
   }
   .button-back--fixed button:hover {
     background-color: transparent;
-    color: #000;
+    color: #fff;
   }
 }
 
@@ -84,13 +84,13 @@
 .button--moema {
   padding: 1.5em 3em;
   border-radius: 50px;
-  background: #ff92f6;
+  background: #5100E8;
   color: #fff;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .button--moema.button--inverted {
-  background: #eceff1;
+  background: #B794F6;
   color: #37474f;
 }
 
@@ -110,7 +110,7 @@
 
 .button--moema:hover {
   transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
-  background-color: #ff92f6;
+  background-color: #B794F6;
   animation: anim-moema-1 0.3s forwards;
 }
 

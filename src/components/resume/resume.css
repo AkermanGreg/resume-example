@@ -20,23 +20,25 @@ h1.name.relative span:last-child {
 }
 
 .resume-section > div:first-child {
-  min-height: 600px;
+  min-height: 450px;
 }
 
 .resume-section:nth-of-type(even) {
-  background: #f9f7f6;
+  background: #F3F3F9;
 }
 
 .resume-section:not(:first-child) {
   padding-top: 100px;
+
 }
 
 .resume-section:nth-of-type(even) h1.name.relative {
   color: #484848;
+  font-size: 16px;
 }
 
 .resume-section .resume-section--row {
-  padding: 80px 0 100px;
+  padding: 40px 0 50px;
 }
 
 .resume-section--row.first {
@@ -47,19 +49,19 @@ h1.name.relative span:last-child {
 .resume-container .resume-left h2 {
   margin: 0;
   line-height: 1.2;
-  text-align: right;
+  text-align: center;
 }
 
 .resume-container .resume-left h2:nth-child(1) {
   margin-top: 16px;
-  font-size: 40px;
+  font-size: 24px;
 }
 
 .resume-container .resume-left h2:nth-child(2) {
   font-weight: normal;
   letter-spacing: 0.2px;
   opacity: 0.8;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .resume-row {
@@ -71,7 +73,7 @@ h1.name.relative span:last-child {
 }
 
 .resume-row > div {
-  margin: 0 40px;
+  margin: 0 10px;
 }
 
 .resume-left {
@@ -80,11 +82,22 @@ h1.name.relative span:last-child {
 }
 
 .resume-right {
-  flex: 3 0 0;
+  flex: 4 0 0;
 }
 
 .resume-right p {
   margin-top: 20px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+li.listOne {
+ line-height: 1.4;
+ margin: 10px 0;
+}
+
+li.listTwo{
+  line-height: 1.4;
 }
 
 .resume-left,

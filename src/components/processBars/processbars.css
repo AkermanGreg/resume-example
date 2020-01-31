@@ -38,6 +38,7 @@
   margin: 0;
   position: relative;
   top: -5px;
+  font-size: 20px;
 }
 
 .processbar-svg {
@@ -57,7 +58,7 @@
   font-size: 20px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  background-color: #ff92f6;
+  background-color: #00008B;
   color: #fff;
   padding: 5px 10px;
   opacity: 0;
@@ -72,7 +73,7 @@
   margin-left: -10px;
   border-width: 10px 10px 0;
   border-style: solid;
-  border-color: #ff92f6 transparent;
+  border-color: #00008B transparent;
   display: block;
   width: 0;
 }

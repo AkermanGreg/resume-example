@@ -1,16 +1,16 @@
 .container-wave svg path {
   stroke: none;
-  fill: #CCCCCC;
+  fill: #000000;
 }
 
 .container-wave svg {
-  background: #f9f7f6;
+  background: #F3F3F9;
   margin-bottom: -10px;
 }
 
 .resume-section:nth-of-type(even) .container-wave svg path {
   stroke: #f9f7f6;
-  fill: #f9f7f6;
+  fill: #000000;
 }
 
 .resume-section:nth-of-type(odd) .container-wave svg path {
@@ -18,7 +18,7 @@
 }
 
 .resume-section:nth-of-type(even) .container-wave svg {
-  background: #CCCCCC;
+  background: #F3F3F9;
 }
 @media only screen and (max-width: 992px) {
   .container-wave {

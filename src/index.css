@@ -35,7 +35,7 @@ body {
     color: #484848;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-    background-color: #CCCCCC;
+    background-color: #F3F3F9;
     width: 100%;
 }
 
@@ -116,7 +116,7 @@ button.more::before {
     top: 0;
     height: 100%;
     width: 140px;
-    background: #FF92F6;
+    background: #584AD7;
     border-radius: 30px;
     z-index: -1;
     transition: .3s ease-in all;
@@ -151,12 +151,12 @@ button.more:hover::after {
 }
 
 ::selection {
-    background: #FF92F6;
+    background: #584AD7;
     /* WebKit/Blink Browsers */
 }
 
 ::-moz-selection {
-    background: #FF92F6;
+    background: #584AD7;
     /* Gecko Browsers */
 }
 
@@ -193,7 +193,7 @@ a.link-slideright::before {
     position: absolute;
     width: 100%;
     height: 2px;
-    background: #F478DC;
+    background: #584AD7;
     transition: transform .3s;
 }
 
@@ -256,7 +256,7 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #F478DC;
+    background: #584AD7;
     background: linear-gradient(50% top, circle, #F478DC 0%, #CC62EE 75%);
     background: radial-gradient(50% top, circle, #F478DC 0%, #CC62EE 75%), radial-gradient(right top, circle, #F478DC 0%, #CC62EE 57%);
     z-index: 1000;
@@ -408,7 +408,7 @@ p {
 .anim--effect-top.revealer--animate .layer:not(:first-child) {
     animation-name: anim-effect-2-2-top;
     animation-delay: 0.5s;
-    background: #FF92F6;
+    background: #584AD7;
 }
 
 @keyframes anim-effect-2-1-top {
@@ -453,7 +453,7 @@ p {
 .anim--effect-bottom.revealer--animate .layer:not(:first-child) {
     animation-name: anim-effect-2-2-bottom;
     animation-delay: 0.5s;
-    background: #FF92F6;
+    background: #584AD7;
 }
 
 @keyframes anim-effect-2-1-bottom {
