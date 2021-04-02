@@ -20,7 +20,7 @@
     "serve": "^11.3.0",
     "swagger-client": "^3.9.6",
     "swagger-ui-react": "^3.24.3",
-    "yarn": "^1.21.1"
+    "yarn": "^1.22.0"
   },
   "devDependencies": {
     "babel-preset-es2015": "^6.24.1",
