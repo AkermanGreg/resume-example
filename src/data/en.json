@@ -45,8 +45,32 @@
     "rows": [
       {
 
+        "title": "Web Developer- International Economic Justice League, Remote",
+        "secondTitle": "Oct 2023 - Present",
+        "content": "Building clean user facing interfaces with scss, bootstrap and modern frameworks.",
+        "listOne": "Fully responsive websites built utilizing Wordpress, html, css3, JavaScript and jQuery, on IIS Server with clean PHP and database operations using MySQL Workbench.",
+        "listTwo": "Created clean, cross-browser-compatible, responsive markup utilizing HTML5, CSS3 and JavaScript."
+      },
+      {
+
+        "title": "Web Developer- Nuvve Holding Corp, Remote",
+        "secondTitle": "Nov 2021 - Feb 2022",
+        "content": "Helped with the creation of dashboards used by organizations of large fleets of vehicles, mainly buses, who use electric stations. to fuel up, in a bi-directional manner- Discharging electricity back to the electric grid for profit and charging from the electric grid as needed, to fuel their electric fleets of automobiles. This is called vehicle to grid. v2g, technology.",
+        "listOne": "Learning how v2g works, ReactIS, NextJS Framework. APIs. Noticing APIs are needed. , Sass, Bitbucket, Jira, Confluence, Github, Vercel, And several others by their very nature are confidential.",
+        "listTwo": "Soft Skills Used- Advanced Communication Skills and Techniques with designers. project managers, VC of Engineering, many back end people that provide data that helped create the visual display of Intelligent Electricity Data for the client side."
+      },
+      {
+
+        "title": "Lead / Architect Web Developer- Regal Assets, LLC, Remote",
+        "secondTitle": "July 2021 - Oct 2021",
+        "content": "Transitioning a monolithic architecture into a serverless one with a content management system for a 401k company with an affiliate program.",
+        "listOne": "Worked with client to understand their business needs and translate them into effective WordPress solutions.",
+        "listTwo": "*Designed and developed custom themes and plugins based on client specifications."
+      },
+      {
+
         "title": "Web Developer - Phyn LLC (Belkin), Torrance, CA",
-        "secondTitle": "Oct 2016 - Nov 2016",
+        "secondTitle": "Oct 2016 - Nov 2019",
         "content": "Demonstrated expertise in front-end web development by overseeing project aspects of a ReactJS application product. Responsible for the build of the Find an Installer Flow - a small ReactJS app developed with Create React for the skeleton, Redux for state management, and Sagas for API calls. Integrated Salesforce by setting up email and contact form ticket routing. Served as architect for the development of the phyn.com website covering multiple phases including a custom administration section partially based on ReactJS that allows users from around the world to create pages in multiple languages.",
         "listOne": " Leveraged the Shopify SDK to sell product via the website while using Shopify tools for effective customer management.",
         "listTwo": "Developed a custom Salesforce app based on ServiceCloud that allows customers to contact Phyn, LLC and support agents to respond using user-friendly and intuitive interface. Worked with the AWS Lymda Microservices architecture to make gets and posts as needed."

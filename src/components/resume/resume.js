@@ -101,7 +101,7 @@ class Resume extends Component {
           const id = el.attributes['data-navid'].value;
           const row = self.refs['rows' + id];
           if (row) {
-            self.animateSections(row.children, 2);
+            self.animateSections(row.children, 4);
             el.isAnimated = true;
           }
         }
@@ -255,7 +255,7 @@ class Resume extends Component {
   renderRows(rows, index) {
     return rows.map((row, i) => {
       const hidden =
-        !this.state.sectionsVisible[index] && i > 2 ? 'hidden' : '';
+        !this.state.sectionsVisible[index] && i > 4 ? 'hidden' : '';
 
       return (
         <div className={classnames('resume-row', hidden)} key={'row-' + i}>
